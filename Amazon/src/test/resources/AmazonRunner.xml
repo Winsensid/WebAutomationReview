@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation Script " parallel="methods" thread-count="4">
+
+    <parameter name="platform" value="mac"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <parameter name="browser" value="Chrome"/>
+
+    <test name="Amazon Test">
+        <classes>
+            <class name="amazonHomePageTest.SetupAmazonHomeTest"/>
+        </classes>
+    </test>
+</suite>
